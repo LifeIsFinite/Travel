@@ -1,0 +1,67 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.top-bar {
+	width: 100%;
+	height: 45px;
+	background-color: #00c0ff;
+	position: fixed;
+	z-index: 999;
+	padding: 3px 20px;
+}
+
+.top-bar .title {
+	margin-top: 3px;
+	font-size: 30px;
+    font-family: cursive;
+    font-style: italic;
+    color: aliceblue;
+}
+
+.top-bar .tools {
+	color: aliceblue;
+	height: 100%;
+	padding-top: 7px;
+	zoom: 1.2;
+}
+
+.tools a {
+	color: aliceblue;
+}
+
+.left-bar {
+	width: 230px;
+	height: 100%;
+	background-color: #23aeec;
+	position: fixed;
+	z-index: 888;
+	padding: 48px 5px;
+}
+
+.show-view {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 777;
+	padding: 45px 0 0 230px;
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
