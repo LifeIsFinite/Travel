@@ -20,6 +20,14 @@ function oneMenuClick() {
 	$(this).addClass('active');
 	$('.ziMeun').hide(1000);
 	var id = $(this).attr('targrt-id');
-	if(id) 'none'==$('#'+id).css('display')?$(this).addClass('rotate'):$(this).removeClass('rotate');
-	if(id) 'none'==$('#'+id).css('display')?$('#'+id).show(1000):$('#'+id).hide(1000);
+	if(id && 'none'==$('#'+id).css('display')) {
+		$(this).removeClass('rotate1');
+		$(this).addClass('rotate');
+		$($(this)[0].children[0]).attr('class', 'fa fa-angle-left');
+		$('#'+id).show(1000);
+	} else if($('.rotate').length > 0) {
+		$('.rotate').addClass('rotate1');
+		$('.rotate1').removeClass('rotate');
+		$('.fa-angle-left').attr('class', 'fa fa-angle-down');
+	}
 }
