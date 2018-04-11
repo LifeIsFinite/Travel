@@ -5,7 +5,7 @@
 	<title>星月旅游</title>
 	
 	<link rel="stylesheet" href="/resources/css/bootstrap-3.3.7.min.css" />
-	<link href="https://cdn.bootcss.com/metisMenu/2.7.4/metisMenu.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="/resources/css/font-awesome-4.7.0.min.css" />
 	<link rel="stylesheet" href="/resources/css/style.css" />
 </head>
 <body>
@@ -23,17 +23,35 @@
 	
 	<!-- 页面左侧菜单栏设计 -->
 	<div class="left-bar">
-		
+		<ul>
+			<li>
+				<a class="one" href="www.baidu.com" target="iframe" targrt-id="ticket">
+					票务信息
+					<i class="fa fa-angle-down"></i>
+				</a>
+				<ul id="ticket" class="ziMeun">
+					<li><a class="two" href="www.baidu.com" target="iframe">船票</a></li>
+					<li><a class="two" href="www.baidu.com" target="iframe">汽车票</a></li>
+					<li><a class="two" href="www.baidu.com" target="iframe">火车票</a></li>
+					<li><a class="two" href="www.baidu.com" target="iframe">飞机票</a></li>
+				</ul>
+			</li>
+			<li><a class="one" href="www.baidu.com" target="iframe">酒店查询</a></li>
+			<li><a class="one" href="www.baidu.com" target="iframe">旅游介绍</a></li>
+			<li><a class="one" href="www.baidu.com" target="iframe">美食推荐</a></li>
+			<li><a class="one" href="www.baidu.com" target="iframe">用户评论</a></li>
+			<li><a class="one" href="www.baidu.com" target="iframe">个人信息</a></li>
+			<li><a class="one" href="www.baidu.com" target="iframe">意见反馈</a></li>
+		</ul>
 	</div>
 	
 	<!-- iframe显示区域 -->
 	<div class="show-view">
-		<iframe src="" ></iframe>
+		<iframe name="iframe" src=""></iframe>
 	</div>
 	
 	<script src="/resources/js/jquery-3.3.1.min.js"></script>
 	<script src="/resources/js/bootstrap-3.3.7.min.js"></script>
-	<script src="https://cdn.bootcss.com/metisMenu/2.7.4/metisMenu.min.js"></script>
 	<script src="/resources/js/index.js"></script>
 </body>
 </html>
