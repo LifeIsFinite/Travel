@@ -1,0 +1,3 @@
+function buyTicket(kind, id) {
+	
+}

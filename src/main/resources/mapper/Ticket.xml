@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xingyue.dao.Dao">
+	<select id="getBoat" resultType="com.xingyue.entity.Ticket" parameterType="java.lang.Integer">
+		SELECT 
+			`id`,
+			`kind`,
+			`number`,
+			`start`,
+			`end`,
+			`s_time`,
+			`e_time`,
+			`c_time`,
+			`p_time`,
+			`surplus`
+		FROM
+			`ticket`
+		WHERE
+			`kind` = #{kind}
+	</select>
+</mapper>
