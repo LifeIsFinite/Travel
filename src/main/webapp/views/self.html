@@ -3,8 +3,77 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>个人信息</title>
+	
+	<link rel="stylesheet" href="/resources/css/bootstrap-3.3.7.min.css" />
+	<link rel="stylesheet" href="/resources/css/style.css" />
 </head>
 <body>
+	<div class="show-box">
+		<div class="self-box">
+			<form id="selfForm" style="zoom:1.5;">
+				<div class="self-line">
+					<div class="row">
+						<div class="col-sm-3 br"><span>昵称</span></div>
+						<div class="col-sm-9"><input type="text" readonly /></div>
+					</div>
+				</div>
+				<div class="self-line">
+					<div class="row">
+						<div class="col-sm-3 br"><span>手机</span></div>
+						<div class="col-sm-9"><input type="text" readonly /></div>
+					</div>
+				</div>
+				<div class="self-line">
+					<div class="row">
+						<div class="col-sm-3 br"><span>性别</span></div>
+						<div class="col-sm-9"><input type="text" readonly /></div>
+					</div>
+				</div>
+				<div class="self-line">
+					<div class="row">
+						<div class="col-sm-3 br"><span>生日</span></div>
+						<div class="col-sm-9"><input type="text" readonly /></div>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-success btn-xs fr" style="margin-left: 5px;">保存</button>
+				<button type="button" class="btn btn-warning btn-xs fr">修改密码</button>
+			</form>
+			<input type="hidden" id="edit"/>
+		</div>
+	</div>
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	                <h4 class="modal-title" id="myModalLabel">修改密码</h4>
+	            </div>
+	            <div class="modal-body">
+	            	<form id="psd">
+	            		<div class="input-group" style="margin-bottom:15px;">
+	            			<span class="input-group-addon">原&ensp;密&ensp;码</span>
+	            			<input type="text" class="form-control" />
+	            		</div>
+	            		<div class="input-group" style="margin-bottom:15px;">
+	            			<span class="input-group-addon">新&ensp;密&ensp;码</span>
+	            			<input type="text" class="form-control" />
+	            		</div>
+	            		<div class="input-group" style="margin-bottom:15px;">
+	            			<span class="input-group-addon">确认密码</span>
+	            			<input type="text" class="form-control" />
+	            		</div>
+	            	</form>
+	            </div>
+	            <div class="modal-footer">
+	                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+	                <button type="button" class="btn btn-primary">修改</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
 	
+	<script src="/resources/js/jquery-3.3.1.min.js"></script>
+	<script src="/resources/js/bootstrap-3.3.7.min.js"></script>
+	<script src="/resources/js/self.js"></script>
 </body>
 </html>
