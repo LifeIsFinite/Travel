@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>注册</title>
+	
+	<link rel="stylesheet" href="/resources/css/bootstrap-3.3.7.min.css" />
+	<link href="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="/resources/css/style.css" />
+</head>
+<body>
+	<div style="width:100%;padding-top:150px;">
+		<div class="login-panel">
+			<form id="registerForm">
+				<div class="input-group" style="margin-bottom: 10px;">
+					<span class="input-group-addon">&ensp;账&emsp;号&ensp;</span>
+					<input type="text" class="form-control" name="account" required />
+				</div>
+				<div class="input-group" style="margin-bottom: 10px;">
+					<span class="input-group-addon">&ensp;密&emsp;码&ensp;</span>
+					<input type="password" class="form-control" name="password" required />
+				</div>
+				<div class="input-group" style="margin-bottom: 10px;">
+					<span class="input-group-addon">确认密码</span>
+					<input type="password" class="form-control" name="psd" required />
+				</div>
+				<div class="row text-center">
+					<input type="submit" class="btn btn-success" style="width: 100px;" value="注册" />
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	<script src="/resources/js/jquery-3.3.1.min.js"></script>
+	<script src="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.js"></script>
+	<script src="/resources/js/register.js"></script>
+</body>
+</html>
