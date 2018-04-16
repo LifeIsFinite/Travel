@@ -1,7 +1,24 @@
 $(document).ready(function() {
 	// 监听事件控制
 	ListenControl();
+	// 是否登录
+	isSigned();
 });
+// 注销
+function signOut() {
+	$('#sign').show();
+	$('#userinfo').hide();
+	Cookies.remove('signed');
+	Cookies.remove('user');
+}
+//是否登录
+function isSigned() {
+	if(Cookies.get('signed')) {
+		$('#sign').hide();
+		$('#username').text(Cookies.getJSON('user').nickname);
+		$('#userinfo').show();
+	}
+}
 // 监听事件控制
 function ListenControl() {
 	// 添加一级菜单选中样式事件

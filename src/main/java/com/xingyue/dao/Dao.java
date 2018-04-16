@@ -11,5 +11,9 @@ public interface Dao {
 	
 	User getUser(User user);
 	
+	User getUserById(Integer id);
+	
 	Integer addUser(User user);
+	
+	Integer editUser(User user);
 }

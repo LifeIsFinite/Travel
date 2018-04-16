@@ -13,6 +13,13 @@ public class User {
 	private String account;
 	private String password;
 	private Timestamp createTime;
+	private String oldpsd;
+	public String getOldpsd() {
+		return oldpsd;
+	}
+	public void setOldpsd(String oldpsd) {
+		this.oldpsd = oldpsd;
+	}
 	public Integer getId() {
 		return id;
 	}

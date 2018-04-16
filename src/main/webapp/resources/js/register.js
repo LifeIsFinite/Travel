@@ -22,6 +22,8 @@ function register() {
 			swal({
 				title: '注册成功'
 			},function() {
+				Cookies.set('user', data.data);
+				Cookies.set('signed', true);
 				window.location.href = '/';
 			});
 		}

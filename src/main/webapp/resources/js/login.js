@@ -13,6 +13,8 @@ function login() {
 		type: 'post',
 		success: function(data) {
 			if(data.errcode == 0) swal(data.errmsg);
+			Cookies.set('user', data.data);
+			Cookies.set('signed', true);
 			window.location.href = '/';
 		}
 	});
